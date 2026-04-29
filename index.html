@@ -54,7 +54,20 @@ Did you know that within the next 10 years the population of Medicare aged benef
 		<script type="text/plain" data-consent-required="true" data-src="third-party/static.klaviyo.com/onsite/js/klaviyo1893.js?company_id=VCTnnt"></script>
 
 	
-<link rel="stylesheet" href="css/common-preloader.css" type="text/css" media="all" /></head>
+<link rel="stylesheet" href="css/common-preloader.css" type="text/css" media="all" />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</head>
 
 
 <body class="home wp-singular page-template page-template-100-width page-template-100-width-php page page-id-9 wp-theme-Avada wp-child-theme-Avada-child fusion-image-hovers fusion-pagination-sizing fusion-button_type-flat fusion-button_span-no fusion-button_gradient-linear avada-image-rollover-circle-yes avada-image-rollover-yes avada-image-rollover-direction-left fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar fusion-disable-outline fusion-sub-menu-fade mobile-logo-pos-left layout-wide-mode avada-has-boxed-modal-shadow- layout-scroll-offset-full avada-has-zero-margin-offset-top fusion-top-header menu-text-align-left mobile-menu-design-modern fusion-show-pagination-text fusion-header-layout-v3 avada-responsive avada-footer-fx-none avada-menu-highlight-style-bar fusion-search-form-clean fusion-main-menu-search-overlay fusion-avatar-circle avada-sticky-shrinkage avada-dropdown-styles avada-blog-layout-large avada-blog-archive-layout-grid avada-header-shadow-no avada-menu-icon-position-left avada-has-mainmenu-dropdown-divider avada-has-main-nav-search-icon avada-has-breadcrumb-mobile-hidden avada-has-titlebar-hide avada-header-border-color-full-transparent avada-has-pagination-padding avada-has-slider-fallback-image avada-flyout-menu-direction-fade avada-ec-views-v1" data-awb-post-id="9"><div class="preloader"></div>
