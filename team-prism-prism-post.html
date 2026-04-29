@@ -1210,14 +1210,14 @@ var miscellaneous_tracking_options = {"ga_mode":"ga4","tracking_mode":"ga","trac
 <script>
 (function(){
   var s=document.createElement('script');
-  s.src='https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+  s.src='https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js';
   s.onload=function(){
     fetch('posts-data.json').then(function(r){return r.json();}).then(function(posts){
       if(!posts||!posts.length)return;
       var html='';
       for(var i=0;i<posts.length;i++){
         var p=posts[i];
-        var body=typeof marked==='function'?marked(p.body):(marked.parse?marked.parse(p.body):p.body);
+        var body=marked.parse(p.body);
         html+='<article class="fusion-post-medium post type-post status-publish format-standard hentry category-uncategorized">';
         html+='<div class="fusion-post-content post-content"><div class="fusion-post-content-container">';
         html+=body;
