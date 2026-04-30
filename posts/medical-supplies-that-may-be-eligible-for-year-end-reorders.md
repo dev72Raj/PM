@@ -16,8 +16,8 @@ Depending on your coverage and medical needs, year-end reorders may apply to sup
 * Wound care dressings and related accessories
 * Ostomy supplies
 * Urological supplies
-* Enteral nutrition supplies\*\*
-* Durable medical equipment accessories\*\*
+* Enteral nutrition supplies
+* Durable medical equipment accessories
 
 \## Why Reorder Now?
 
