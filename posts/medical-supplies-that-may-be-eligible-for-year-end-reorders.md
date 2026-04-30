@@ -3,7 +3,7 @@ title: Medical Supplies That May Be Eligible for Year End Reorders
 date: 2026-04-30
 image: images/uploads/cms/image-4-.png
 ---
-!\[Medical supplies on a table](images/uploads/cms/image-4-.png--450x450.png)
+!\[Medical supplies on a table](images/uploads/cms/image-4-.png)
 
 \# Medical Supplies That May Be Eligible for Year End Reorders
 
