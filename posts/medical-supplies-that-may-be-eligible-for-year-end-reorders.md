@@ -21,6 +21,8 @@ Depending on your coverage and medical needs, year-end reorders may apply to sup
 
 \## Why Reorder Now?
 
+![no image ](images/uploads/cms/image-4-.png "test")
+
 Reordering before December 31st ensures that your current year's insurance benefits are applied to the cost. This is especially helpful if you have already met your deductible for the year.
 
 If you have questions about your eligibility or need assistance with your reorder, the Prism team is here to help guide you through the process and ensure you have the supplies you need for a healthy start to the new year.
