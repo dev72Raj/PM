@@ -19,12 +19,16 @@ files.forEach(function(file) {
   if (!match) return;
 
   const fm = {};
+  var lastKey = '';
   match[1].split('\n').forEach(function(line) {
-    const colon = line.indexOf(':');
-    if (colon > -1) {
-      const key = line.slice(0, colon).trim();
-      const val = line.slice(colon + 1).trim().replace(/^"|"$/g, '');
-      fm[key] = val;
+    line = line.replace(/\r$/, '');
+    var colon = line.indexOf(':');
+    if (colon > -1 && !/^\s/.test(line)) {
+      lastKey = line.slice(0, colon).trim();
+      var val = line.slice(colon + 1).trim().replace(/^"|"$/g, '');
+      fm[lastKey] = val;
+    } else if (lastKey && /^\s/.test(line)) {
+      fm[lastKey] = (fm[lastKey] + ' ' + line.trim()).trim();
     }
   });
 
@@ -34,7 +38,7 @@ files.forEach(function(file) {
     title: fm.title || '',
     date: fm.date || '',
     image: fm.image || '',
-    body: match[2].trim()
+    body: match[2].trim().replace(/\\([#\[\]\-\*!>])/g, '$1')
   });
 });
 
